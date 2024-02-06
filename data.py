@@ -21,6 +21,13 @@ elif temp == 68:
 else:
     print('cold') """
 
-x = "0,2,4,6,8,"
-y = "1,3,5,7,9"
+#even or odd
+even_or_odd = int (input ("Even or Odd"))
+if ((even_or_odd) % 2) == 0:
+    print("even")
+else:
+    print("odd")
 
+def subtotal():
+    int(input("what was your subtotal?"))
+    
