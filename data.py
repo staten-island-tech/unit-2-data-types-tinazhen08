@@ -9,7 +9,7 @@ if my_favorite_color  == "Blue":
     print("correct")
 else:
     print("incorrect") """
-
+10
 """ x = "friend"
 print(f"hello {x}") """
 
@@ -21,13 +21,28 @@ elif temp == 68:
 else:
     print('cold') """
 
-#even or odd
+""" #even or odd
 even_or_odd = int (input ("Even or Odd"))
 if ((even_or_odd) % 2) == 0:
     print("even")
 else:
     print("odd")
+ """
+
 
 def subtotal():
-    int(input("what was your subtotal?"))
+    global subtotal
+    subtotal = float(input("> $"))
+
+def tip():
+    print("what is your subtotal?")
+    
+    service = input(">")
+    if ((service) == "bad"):
+        print(f"do not tip")
+    elif((service) == "okay"):
+        print(f"tip them {subtotal * float(0.15)}")
+
+subtotal()
+tip()
     
